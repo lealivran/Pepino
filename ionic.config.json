@@ -1,0 +1,8 @@
+{
+  "name": "pepinoApp",
+  "app_id": "7bc1ca87",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
