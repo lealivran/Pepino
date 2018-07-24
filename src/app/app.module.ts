@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
+// import { WelcomePage } from '../pages/welcome/welcome';
 import { CalendarPage } from '../pages/calendar/calendar';
 import { GardenerPage } from '../pages/gardener/gardener';
 import { AccountPage } from '../pages/account/account';
@@ -11,6 +12,8 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { AuthServiceProvider } from '../providers/auth-service/auth-service';
+import { WeatherServiceProvider } from '../providers/weather-service/weather-service';
 
 @NgModule({
   declarations: [
@@ -37,7 +40,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    AuthServiceProvider,
+    WeatherServiceProvider
   ]
 })
 export class AppModule {}

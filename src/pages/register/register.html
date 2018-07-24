@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Créer mon compte</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="login-content" padding>
+  <div class="login-box">
+
+    <form (ngSubmit)="register()" #registerForm="ngForm">
+      <ion-row>
+        <ion-col>
+          <ion-list inset>
+
+            <ion-item>
+              <ion-input type="text" placeholder="Prénom" name="firstname" [(ngModel)]="registerCredentials.firstname" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-input type="text" placeholder="Email" name="email" [(ngModel)]="registerCredentials.email" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-input type="text" placeholder="Code postale" name="zipcode" [(ngModel)]="registerCredentials.zipcode" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-input type="password" placeholder="Mot de passe" name="password" [(ngModel)]="registerCredentials.password" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-input type="password" placeholder="Confirmation du mot de passe" name="password" [(ngModel)]="registerCredentials.passwordConfirm" required></ion-input>
+            </ion-item>
+
+          </ion-list>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="signup-col">
+          <button ion-button class="actionButton" full type="submit" [disabled]="!registerForm.form.valid">Accéder à mon potager</button>
+        </ion-col>
+      </ion-row>
+
+    </form>
+  </div>
+</ion-content>

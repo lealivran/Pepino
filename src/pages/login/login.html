@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Connexion</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="login-content" padding>
+  <div text-center>
+    <img class='brand-logo' src="../../assets/icon/PEPINO.png" alt="">
+  </div>
+  <div class="login-box">
+    <form (ngSubmit)="login()" #registerForm="ngForm">
+      <ion-row>
+        <ion-col>
+          <ion-list inset>
+
+            <ion-item>
+              <ion-input type="text" placeholder="Adresse email" name="email" [(ngModel)]="registerCredentials.email" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-input type="password" placeholder="Mot de passe" name="password" [(ngModel)]="registerCredentials.password" required></ion-input>
+            </ion-item>
+
+          </ion-list>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="signup-col">
+          <button ion-button class="actionButton" full type="submit" [disabled]="!registerForm.form.valid">Connexion</button>
+          <button ion-button class="secondaryActionButton" block clear (click)="resetPassword()">Mot de passe oublié</button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col text-center class="signup-col">
+          ou
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="signup-col">
+          <button ion-button icon-start class="actionFacebookButton" full type="submit">
+            <ion-icon name="logo-facebook"></ion-icon>
+            Se connecter avec Facebook
+          </button>
+        </ion-col>
+      </ion-row>
+
+    </form>
+  </div>
+</ion-content>
