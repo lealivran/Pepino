@@ -9,9 +9,29 @@ import { WeatherServiceProvider } from '../../providers/weather-service/weather-
 export class HomePage {
 
   weatherInfo: object = {};
+  garden = [
+    { 'vegetable': 'tomate', 'step': 5},
+    { 'vegetable': 'tomate', 'step': 5},
+    { 'vegetable': 'tomate', 'step': 5},
+    { 'vegetable': 'tomate', 'step': 5},
+    { 'vegetable': 'carotte', 'step': 3},
+    { 'vegetable': 'carotte', 'step': 3},
+    { 'vegetable': 'carotte', 'step': 3},
+    { 'vegetable': 'salade', 'step': 1},
+    { 'vegetable': 'salade', 'step': 1},
+    { 'vegetable': 'salade', 'step': 1},
+    { 'vegetable': 'plusSign', 'step': null},
+    { 'vegetable': 'plusSign', 'step': null},
+    { 'vegetable': 'plusSign', 'step': null},
+    { 'vegetable': 'plusSign', 'step': null},
+    { 'vegetable': 'plusSign', 'step': null}
+  ];
+
+  numbers = [];
+
 
   constructor(public navCtrl: NavController, public WeatherService: WeatherServiceProvider) {
-
+    this.numbers = Array(7).fill(1); // [4,4,4,4,4]
   }
 
   ionViewDidLoad() {

@@ -15,6 +15,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { AuthServiceProvider } from '../providers/auth-service/auth-service';
 import { WeatherServiceProvider } from '../providers/weather-service/weather-service';
 
+import { CalendarModule } from 'ion2-calendar';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -26,7 +28,8 @@ import { WeatherServiceProvider } from '../providers/weather-service/weather-ser
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    CalendarModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

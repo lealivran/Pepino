@@ -2,4 +2,39 @@ page-home {
   h2 {
     color: color($colors, primary)
   }
+  .gardenBox {
+    background-image: linear-gradient(to right, #DEDDDD 33%, rgba(222,221,221,0) 0%);
+    background-position: bottom;
+    background-size: 11px 1px;
+    background-repeat: repeat-x;
+
+
+    text-align: center;
+    padding: 5px;
+    img {
+      height: 60px;
+      margin: 5px 0px;
+    }
+
+    img.icon {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .dotbox {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    .dot {
+      display: inline-block;
+      width: 9px;
+      height: 9px;
+      border: 1px solid color($colors, primary);
+      border-radius: 50%;
+    }
+    .full {
+      background-color: color($colors, primary);
+    }
+  }
 }

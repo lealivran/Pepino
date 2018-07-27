@@ -5,8 +5,34 @@
 </ion-header>
 
 <ion-content padding>
-  <div>
+  <div padding>
     <p>{{weatherInfo.cityName}}</p>
-    <pin></pin>
   </div>
+  <ion-grid padding>
+    <ion-row>
+      <ion-col class="gardenBox" col-3 *ngFor="let vegetable of garden">
+        <img [ngClass]="{'icon': vegetable.step == null}" class='legume' src="../../assets/imgs/{{vegetable.vegetable}}.png" alt="">
+        <div class="dotbox" *ngIf="vegetable.step != null">
+          <ng-container *ngFor="let i of numbers; let index = index">
+            <span class="dot" [ngClass]="{'full': index < vegetable.step}"></span>
+          </ng-container>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-list no-lines>
+    <ion-list-header uppercase>
+      Mes prochaines récoltes :
+    </ion-list-header>
+    <ion-item>
+      Dans 1 jour :
+    </ion-item>
+    <ion-item>
+      Dans 10 jours :
+    </ion-item>
+    <ion-item>
+      Dans 15 jours :
+    </ion-item>
+  </ion-list>
 </ion-content>
