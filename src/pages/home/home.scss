@@ -1,7 +1,45 @@
 page-home {
-  h2 {
-    color: color($colors, primary)
+  .weatherBox {
+    padding-top: 10px !important;
+    padding-bottom: 5px !important;
+    display: flex;
+    justify-content: space-between;
+    color: color($colors, text);
+
+    .flex {
+      display: flex;
+      align-items: center;
+
+      .pin {
+        margin-right: 5px;
+      }
+      .city {
+        margin-right: 7px;
+        display: inline-block;
+        font-size: 20px;
+      }
+      .sun {
+        margin-right: 7px;
+      }
+      .temp {
+        margin-right: 3px;
+      }
+      .tempNumber {
+        font-size: 15px;
+      }
+    }
+    .cam {
+      height: 40px;
+    }
+    img {
+      height: 25px;
+    }
   }
+  .GardenContent {
+    padding-top: 0px !important;
+    color: color($colors, text);
+  }
+
   .gardenBox {
     background-image: linear-gradient(to right, #DEDDDD 33%, rgba(222,221,221,0) 0%);
     background-position: bottom;
@@ -19,6 +57,7 @@ page-home {
     img.icon {
       width: 40px;
       height: 40px;
+      margin: 22px 0px;
     }
   }
 
@@ -26,6 +65,7 @@ page-home {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    margin: 0px 7px 3px 3px;
     .dot {
       display: inline-block;
       width: 9px;
@@ -35,6 +75,35 @@ page-home {
     }
     .full {
       background-color: color($colors, primary);
+    }
+  }
+
+  .recoltes {
+    color: color($colors, text);
+    ion-list-header {
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    ion-item {
+      font-size: 14px;
+      ion-label {
+        display: flex;
+        align-items: center;
+        margin:0px;
+        padding-left: 10px;
+      }
+
+      .period {
+        margin-right: 5px;
+      }
+
+      span {
+        display: inline-block;
+      }
+
+      img {
+        width: 30px;
+      }
     }
   }
 }

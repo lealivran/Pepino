@@ -5,10 +5,19 @@
 </ion-header>
 
 <ion-content padding>
-  <div padding>
-    <p>{{weatherInfo.cityName}}</p>
+  <div class="weatherBox" padding>
+    <div class="flex">
+      <img class="pin" src="../../assets/imgs/pin.png" alt="">
+      <span class="city">{{weatherInfo.cityName}}</span>
+      <img class="sun" src="../../assets/imgs/sun.png" alt="">
+      <img class="temp" src="../../assets/imgs/temp.png" alt="">
+      <span class="tempNumber">{{weatherInfo.temp}}°</span>
+    </div>
+    <div class="">
+      <img class="cam" src="../../assets/imgs/cam.png" alt="">
+    </div>
   </div>
-  <ion-grid padding>
+  <ion-grid class="GardenContent" padding>
     <ion-row>
       <ion-col class="gardenBox" col-3 *ngFor="let vegetable of garden">
         <img [ngClass]="{'icon': vegetable.step == null}" class='legume' src="../../assets/imgs/{{vegetable.vegetable}}.png" alt="">
@@ -21,18 +30,28 @@
     </ion-row>
   </ion-grid>
 
-  <ion-list no-lines>
-    <ion-list-header uppercase>
+  <ion-list class="recoltes" no-lines>
+    <ion-list-header class="recolte-title" uppercase>
       Mes prochaines récoltes :
     </ion-list-header>
-    <ion-item>
-      Dans 1 jour :
+    <ion-item class="recolte-item">
+      <div class="period">Dans 1 jour :</div>
+      <div><img class='legume' src="../../assets/imgs/tomate.png" alt=""></div>
+      <div><img class='legume' src="../../assets/imgs/tomate.png" alt=""></div>
+      <div><img class='legume' src="../../assets/imgs/tomate.png" alt=""></div>
+      <div><img class='legume' src="../../assets/imgs/tomate.png" alt=""></div>
     </ion-item>
-    <ion-item>
-      Dans 10 jours :
+    <ion-item class="recolte-item">
+      <div class="period">Dans 10 jours :</div>
+      <div><img class='legume' src="../../assets/imgs/carotte.png" alt=""></div>
+      <div><img class='legume' src="../../assets/imgs/carotte.png" alt=""></div>
+      <div><img class='legume' src="../../assets/imgs/carotte.png" alt=""></div>
     </ion-item>
-    <ion-item>
-      Dans 15 jours :
+    <ion-item class="recolte-item">
+      <div class="period">Dans 15 jours :</div>
+      <div><img class='legume' src="../../assets/imgs/salade.png" alt=""></div>
+      <div><img class='legume' src="../../assets/imgs/salade.png" alt=""></div>
+      <div><img class='legume' src="../../assets/imgs/salade.png" alt=""></div>
     </ion-item>
   </ion-list>
 </ion-content>

@@ -24,14 +24,15 @@ export class HomePage {
     { 'vegetable': 'plusSign', 'step': null},
     { 'vegetable': 'plusSign', 'step': null},
     { 'vegetable': 'plusSign', 'step': null},
-    { 'vegetable': 'plusSign', 'step': null}
+    { 'vegetable': 'plusSign', 'step': null},
+    { 'vegetable': 'extend', 'step': null}
   ];
 
   numbers = [];
 
 
   constructor(public navCtrl: NavController, public WeatherService: WeatherServiceProvider) {
-    this.numbers = Array(7).fill(1); // [4,4,4,4,4]
+    this.numbers = Array(6).fill(1); // [4,4,4,4,4]
   }
 
   ionViewDidLoad() {

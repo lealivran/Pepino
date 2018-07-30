@@ -21,6 +21,14 @@
   width: 110px;
 }
 
+.tabs .tab-item .potager {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 100%;
+  background-image: url('../assets/imgs/logo.png');
+  background-size:contain;
+}
+
 // BUTTONS
 
 .actionButton {
@@ -44,4 +52,8 @@
 }
 .actionFacebookButton:hover, .actionFacebookButton:active {
   background-color: #3B5998 !important;
+}
+
+.header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
+  background: none !important;
 }
