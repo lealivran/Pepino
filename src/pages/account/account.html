@@ -1,32 +1,48 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Mon compte
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
 <ion-content>
-  <div class="profileHeader"></div>
+  <div class="profileHeader" padding>
+    <img class='avatar' src="../../assets/imgs/coraline.png" alt="">
+    <div class="headerText">
+      <p class="name">Coraline Bodnar</p>
+      <p class="status">Novice</p>
+      <p class="city">
+        <img class="pin" src="../../assets/imgs/pin.png" alt="">
+        <span>Lille</span>
+      </p>
+    </div>
+  </div>
 
 
-  <ion-list>
-    <ion-list-header>
+  <ion-list class="settings" no-lines>
+    <ion-list-header no-lines>
       Mon compte
     </ion-list-header>
-    <ion-item>Modifier mon profil</ion-item>
-    <ion-item>Mon abonnement</ion-item>
-    <ion-list-header>
+      <button class="lines" ion-item (click)="itemSelected(item)">
+        Modifier mon profil
+      </button>
+      <button ion-item (click)="itemSelected(item)">
+        Mon abonnement
+      </button>
+    <ion-list-header no-lines>
       Plus d'informations
     </ion-list-header>
-    <ion-item>A propos</ion-item>
-    <ion-item>CGU</ion-item>
-    <ion-list-header>
+      <button class='lines' ion-item (click)="itemSelected(item)">
+        À propos
+      </button>
+      <button ion-item (click)="itemSelected(item)">
+        CGU
+      </button>
+    <ion-list-header no-lines>
       Actions
     </ion-list-header>
-    <ion-item>Partager mon potager</ion-item>
-    <ion-item>Contacter Bonduelle</ion-item>
-    <ion-item>Se déconnecter</ion-item>
+      <button class='lines' ion-item (click)="itemSelected(item)">
+        Partager mon potager
+      </button>
+      <button class='lines' ion-item (click)="itemSelected(item)">
+        Contacter Pepino
+      </button>
+      <button ion-item (click)="itemSelected(item)">
+        Se déconnecter
+      </button>
   </ion-list>
 
 </ion-content>
