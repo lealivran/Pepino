@@ -1,17 +1,108 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Calendar
+    <ion-title text-center>
+      Mon Calendrier
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+  <div class="calendar-header">
+    <div class="fleche">
+      <img src="../../assets/imgs/leftFleche.png" alt="">
+    </div>
+    <div class="mois">
+      Août
+    </div>
+    <div class="fleche">
+      <img src="../../assets/imgs/rightFleche.png" alt="">
+    </div>
+  </div>
+  <table class='calendar'>
+    <tr class="days">
+      <td class='box corner-top-left'>LUN</td>
+      <td class='box no-top'>MAR</td>
+      <td class='box no-top'>MER</td>
+      <td class='box no-top'>JEU</td>
+      <td class='box no-top'>VEN</td>
+      <td class='box no-top'>SAM</td>
+      <td class='box corner-top-right'>DIM</td>
+    </tr>
+    <tr>
+      <td class='box no-left'></td>
+      <td class='box'></td>
+      <td class='box'>1</td>
+      <td class='box'>2</td>
+      <td class='box'>3</td>
+      <td class='box'>4</td>
+      <td class='box no-right'>5</td>
+    </tr>
+    <tr>
+      <td class='box no-left'>6</td>
+      <td class='box isTask'>
+        <span class="number">7</span>
+        <span class='dot'></span>
+      </td>
+      <td class='box'>8</td>
+      <td class='box currentDay'>9</td>
+      <td class='box'>10</td>
+      <td class='box'>11</td>
+      <td class='box no-right'>12</td>
+    </tr>
+    <tr>
+      <td class='box no-left'>13</td>
+      <td class='box'>14</td>
+      <td class='box'>15</td>
+      <td class='box isTask'>
+        <span class="number">16</span>
+        <span class='dot'></span>
+      </td>
+      <td class='box'>17</td>
+      <td class='box'>18</td>
+      <td class='box isTask no-right'>
+        <span class="number">19</span>
+        <span class='dot'></span>
+      </td>
+    </tr>
+    <tr>
+      <td class='box no-left'>20</td>
+      <td class='box'>21</td>
+      <td class='box'>22</td>
+      <td class='box'>23</td>
+      <td class='box'>24</td>
+      <td class='box'>25</td>
+      <td class='box no-right'>26</td>
+    </tr>
+    <tr>
+      <td class='box corner-bottom-left'>27</td>
+      <td class='box no-bottom'>28</td>
+      <td class='box no-bottom'>29</td>
+      <td class='box no-bottom'>30</td>
+      <td class='box no-bottom'>31</td>
+      <td class='box no-bottom'></td>
+      <td class='box corner-bottom-right'></td>
+    </tr>
+  </table>
 
-  <!-- <ion-calendar [(ngModel)]="date"
-              (onChange)="onChange($event)"
-              [type]="type"
-              [format]="'YYYY-MM-DD'">
-</ion-calendar> -->
+  <div class="todo-list">
+    <div class="todo-header">
+      <img class='legume' src="../../assets/imgs/calendar.png" alt="">
+      <span>Jeudi 9 août</span>
+    </div>
 
+    <ion-list class="todo-content" no-lines>
+      <ion-item class="todo-item">
+        <div><img class='check' src="../../assets/imgs/check.png" alt=""><span class="todo-dot"></span></div>
+        <div class="task">Récolte des tomates</div>
+      </ion-item>
+      <ion-item class="todo-item">
+        <div><span class="todo-dot"></span></div>
+        <div class="period">Récolte des carottes</div>
+      </ion-item>
+      <ion-item class="todo-item">
+        <div><span class="todo-dot"></span></div>
+        <div class="period">Récolte des brocolis</div>
+      </ion-item>
+    </ion-list>
+  </div>
 </ion-content>

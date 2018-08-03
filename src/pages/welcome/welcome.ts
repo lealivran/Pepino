@@ -19,10 +19,6 @@ export class WelcomePage {
   constructor(private nav: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad WelcomePage');
-  }
-
   public login() {
     this.nav.push('LoginPage');
   }
