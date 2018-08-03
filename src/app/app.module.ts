@@ -9,6 +9,7 @@ import { GardenerPage } from '../pages/gardener/gardener';
 import { AccountPage } from '../pages/account/account';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { VegetablePage } from '../pages/vegetable/vegetable';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -24,11 +25,14 @@ import { CalendarModule } from 'ion2-calendar';
     GardenerPage,
     AccountPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    VegetablePage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp, {
+      backButtonText: 'Retour'
+     }),
     CalendarModule
   ],
   bootstrap: [IonicApp],
@@ -38,7 +42,8 @@ import { CalendarModule } from 'ion2-calendar';
     GardenerPage,
     AccountPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    VegetablePage
   ],
   providers: [
     StatusBar,

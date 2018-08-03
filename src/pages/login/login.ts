@@ -25,10 +25,6 @@ export class LoginPage {
   constructor(private nav: NavController, private auth: AuthServiceProvider, private alertCtrl: AlertController, private loadingCtrl: LoadingController, public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad LoginPage');
-  }
-
   public createAccount() {
     this.nav.push('RegisterPage');
   }
@@ -39,7 +35,7 @@ export class LoginPage {
       if (allowed) {
         this.nav.setRoot(TabsPage);
       } else {
-        this.showError("Access Denied");
+        this.showError("Identifiants incorrects");
       }
     },
       error => {
@@ -49,7 +45,7 @@ export class LoginPage {
 
   showLoading() {
     this.loading = this.loadingCtrl.create({
-      content: 'Please wait...',
+      content: 'Patientez...',
       dismissOnPageChange: true
     });
     this.loading.present();
@@ -59,7 +55,7 @@ export class LoginPage {
     this.loading.dismiss();
 
     let alert = this.alertCtrl.create({
-      title: 'Fail',
+      title: 'Erreur',
       subTitle: text,
       buttons: ['OK']
     });

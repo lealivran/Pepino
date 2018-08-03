@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController} from 'ionic-angular';
 import { WeatherServiceProvider } from '../../providers/weather-service/weather-service';
+import { VegetablePage } from '../vegetable/vegetable';
+
 
 @Component({
   selector: 'page-home',
@@ -37,6 +39,10 @@ export class HomePage {
 
   ionViewDidLoad() {
     this.weatherInfo = this.WeatherService.getWeatherInfo();
+  }
+
+  pushVegetable() {
+    this.navCtrl.push(VegetablePage);
   }
 
 }

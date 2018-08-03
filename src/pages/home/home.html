@@ -19,7 +19,7 @@
   </div>
   <ion-grid class="GardenContent" padding>
     <ion-row>
-      <ion-col class="gardenBox" col-3 *ngFor="let vegetable of garden">
+      <ion-col class="gardenBox" col-3 *ngFor="let vegetable of garden" (click)="pushVegetable()">        
         <img [ngClass]="{'icon': vegetable.step == null}" class='legume' src="../../assets/imgs/{{vegetable.vegetable}}.png" alt="">
         <div class="dotbox" *ngIf="vegetable.step != null">
           <ng-container *ngFor="let i of numbers; let index = index">
