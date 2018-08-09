@@ -1,4 +1,8 @@
 page-vegetable {
+  .toolbar-title-ios {
+    text-transform: uppercase;
+    color: color($colors, text);
+  }
   .vegetableHeader {
     text-align: center;
     .vegetable {

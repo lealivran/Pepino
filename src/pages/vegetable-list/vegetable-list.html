@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Légumes</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <ion-item *ngFor="let vegetable of vegetableList">
+      <ion-avatar item-start>
+        <img src="../../assets/imgs/vegetables/{{vegetable.slug}}.jpg">
+      </ion-avatar>
+      {{vegetable.name}}
+      <ion-icon name="add" item-end></ion-icon>
+    </ion-item>
+</ion-content>

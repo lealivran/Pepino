@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { NavController} from 'ionic-angular';
 import { WeatherServiceProvider } from '../../providers/weather-service/weather-service';
 import { VegetablePage } from '../vegetable/vegetable';
+import { VegetableListPage } from '../vegetable-list/vegetable-list';
+
 
 
 @Component({
@@ -21,7 +23,10 @@ export class HomePage {
     { 'vegetable': 'carotte', 'step': 3},
     { 'vegetable': 'salade', 'step': 1},
     { 'vegetable': 'salade', 'step': 1},
-    { 'vegetable': 'salade', 'step': 1},
+    { 'vegetable': 'salade', 'step': 1}
+  ];
+
+  icons = [
     { 'vegetable': 'plusSign', 'step': null},
     { 'vegetable': 'plusSign', 'step': null},
     { 'vegetable': 'plusSign', 'step': null},
@@ -43,6 +48,10 @@ export class HomePage {
 
   pushVegetable() {
     this.navCtrl.push(VegetablePage);
+  }
+
+  pushList() {
+    this.navCtrl.push(VegetableListPage);
   }
 
 }
