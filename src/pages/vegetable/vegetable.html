@@ -1,10 +1,96 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>carotte</ion-title>
+    <ion-title>Carotte</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="addVegetable()"><ion-icon name="add"></ion-icon>Ajouter à mon potager</button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
-
 <ion-content padding>
+  <div class="vegetableHeader">
+    <img class='vegetable' src="../../assets/imgs/carotteRounded.png" alt="">
+    <div class="headerText">
+      <p class="name">Carotte</p>
+      <p class="variety">Variété Naval</p>
+      <p class="season">
+        <img class="pin" src="../../assets/imgs/snow.png" alt="">
+        <span>Légume d'hiver</span>
+      </p>
+    </div>
+  </div>
+
+  <ion-segment [(ngModel)]="value" color="primary" full='true'>
+    <ion-segment-button value="content">
+      Mon potager (3)
+    </ion-segment-button>
+    <ion-segment-button value="infos">
+      Informations
+    </ion-segment-button>
+    <ion-segment-button value="dates">
+      Dates clés
+    </ion-segment-button>
+  </ion-segment>
+
+  <div class="segmentContent" [ngSwitch]="value">
+    <div class="" *ngSwitchCase="'infos'">
+      infos
+    </div>
+
+    <div class="" *ngSwitchCase="'dates'">
+      dates
+    </div>
+
+    <div class="vegetableContent" *ngSwitchCase="'content'">
+      <div class="vegetableBox">
+        <img class='vegetable' src="../../assets/imgs/carotteRounded.png" alt="">
+        <div class="vegetableText">
+          <p class="name">Carotte</p>
+          <div class="dotbox">
+            <span class="dot full"></span>
+            <span class="dot full"></span>
+            <span class="dot full"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <p>Planté le 03/02/2018</p>
+          <p>Récolte prévue dans <strong>5 jours</strong></p>
+        </div>
+      </div>
+      <div class="vegetableBox">
+        <img class='vegetable' src="../../assets/imgs/carotteRounded.png" alt="">
+        <div class="vegetableText">
+          <p class="name">Carotte</p>
+          <div class="dotbox">
+            <span class="dot full"></span>
+            <span class="dot full"></span>
+            <span class="dot full"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <p>Planté le 03/02/2018</p>
+          <p>Récolte prévue dans <strong>5 jours</strong></p>
+        </div>
+      </div>
+      <div class="vegetableBox">
+        <img class='vegetable' src="../../assets/imgs/carotteRounded.png" alt="">
+        <div class="vegetableText">
+          <p class="name">Carotte</p>
+          <div class="dotbox">
+            <span class="dot full"></span>
+            <span class="dot full"></span>
+            <span class="dot full"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <p>Planté le 03/02/2018</p>
+          <p>Récolte prévue dans <strong>5 jours</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </ion-content>

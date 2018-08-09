@@ -14,8 +14,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'vegetable.html',
 })
 export class VegetablePage {
+  value: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.value = "content";
   }
 
   ionViewDidLoad() {

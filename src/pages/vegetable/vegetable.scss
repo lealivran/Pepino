@@ -1,3 +1,69 @@
 page-vegetable {
+  .vegetableHeader {
+    text-align: center;
+    .vegetable {
+      border-radius: 50%;
+      border: 2px solid color($colors, primary);
+      width: 80px;
+      height: 80px;
+    }
+    .headerText {
+      text-align: center;
+      .name {
+        margin: 3px;
+      }
+      .variety {
+        margin: 3px;
+        color: color($colors, primary);
+      }
+      .season {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 3px;
+        img {
+          width: 15px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
 
+  ion-segment {
+    margin-top: 20px;
+  }
+
+  .vegetableContent {
+    margin-top: 20px;
+    .vegetableBox {
+      display: flex;
+      align-items: flex-start;
+      margin: 10px 0px;
+
+      img {
+        width: 60px;
+        height: 60px;
+      }
+      .vegetableText {
+        margin-left: 10px;
+
+        p {
+          margin: 2px 0px;
+        }
+        .dotbox {
+          margin: 2px 0px;
+          .dot {
+            display: inline-block;
+            width: 9px;
+            height: 9px;
+            border: 1px solid color($colors, primary);
+            border-radius: 50%;
+          }
+          .full {
+            background-color: color($colors, primary);
+          }
+        }
+      }
+    }
+  }
 }
