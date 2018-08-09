@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 @Component({
@@ -10,5 +10,4 @@ export class GardenerPage {
   constructor(public navCtrl: NavController) {
 
   }
-
 }

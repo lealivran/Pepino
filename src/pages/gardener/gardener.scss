@@ -1,3 +1,66 @@
 page-gardener {
+  .toolbar-title-ios {
+    text-transform: uppercase;
+    color: color($colors, text);
+  }
+  .gardenerHeader {
+    color: color($colors, text);
+    text-align: center;
+    margin-top: 30px;
+    .gardener {
+      border-radius: 50%;
+      border: 2px solid color($colors, primary);
+      width: 100px;
+      height: 100px;
+    }
+    .headerText {
+      text-align: center;
+      .name {
+        margin: 3px;
+      }
+      .exp {
+        margin: 3px;
+        color: color($colors, primary);
+      }
+      .local {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 3px;
+        img {
+          width: 10px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  .buttonBox {
+    button {
+      background-color: color($colors, primary);
+    }
+  }
+  .statBox {
+    color: color($colors, text);
+    .statContent {
+      color: color($colors, text);
+      display: flex;
+      .stat {
+        text-align: center;
+        width: 150px;
+        img {
+          height: 50px;
+        }
+        .number {
+          color: color($colors, primary);
+          font-size: 1.2em;
+        }
+      }
+      .graine {
+        img {
+          height: 40px !important;
+        }
+      }
+    }
+  }
 
 }

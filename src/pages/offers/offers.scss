@@ -1,0 +1,51 @@
+page-offers {
+  .toolbar-title-ios {
+    text-transform: uppercase;
+    color: color($colors, text);
+  }
+  .offersBox {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    .offer {
+      border-radius: 15px;
+      border: 2px solid color($colors, text);
+      width: 100px;
+      text-align: center;
+      height: 300px;
+      .offerHeader {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        border-bottom: 2px solid color($colors, text);
+        height: 60px;
+        img {
+          width: 20%;
+        }
+      }
+      .offerContent {
+        color: color($colors, text);
+        h3 {
+          font-size: 1em;
+
+        }
+      }
+    }
+    .offer1 {
+      img {
+        width: 11% !important;
+      }
+    }
+
+    .selected {
+      border: 4px solid color($colors, primary);
+      .offerHeader {
+        border-bottom: 2px solid color($colors, primary);
+      }
+    }
+  }
+  .buttonBox {
+    margin-top: 40px;
+    text-align: center;
+  }
+}
