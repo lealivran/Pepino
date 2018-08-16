@@ -9,34 +9,72 @@
   <div text-center>
     <img class='brand-logo' src="../../assets/icon/PEPINO.png" alt="">
   </div>
+  <p class="selectText">Sélectionnez votre offre</p>
   <div class="offersBox">
     <div class="offer offer1">
       <div class="offerHeader">
         <img src="../../assets/imgs/offer1.png" alt="">
       </div>
-      <div class="offerContent" padding>
-        <h3>Formule xxx</h3>
+      <div class="offerContent">
+        <h3>Mon petit potager</h3>
+        <div class="line">
+          <p class="iconBox">
+            <img class='offerIcon' src="../../assets/imgs/1user.png" alt="">
+            1 personne
+          </p>
+          <p class="iconBox">
+            <img class='offerIcon' src="../../assets/imgs/arrow.png" alt="">
+            15m2
+          </p>
+        </div>
+        <!-- <p class="sale display_none">0%</p> -->
+        <p class="priceBox"><span class="price">20€</span>/mois</p>
       </div>
     </div>
     <div class="offer selected">
       <div class="offerHeader">
         <img src="../../assets/imgs/offer2.png" alt="">
       </div>
-      <div class="offerContent" padding>
-        <h3>Formule xxx</h3>
+      <div class="offerContent">
+        <h3>Mon potager</h3>
+        <div class="line">
+          <p class="iconBox">
+            <img class='offerIcon' src="../../assets/imgs/2users.png" alt="">
+            2 personnes
+          </p>
+          <p class="iconBox">
+            <img class='offerIcon' src="../../assets/imgs/arrow.png" alt="">
+            30m2
+          </p>
+        </div>
+        <!-- <p class="sale">-10%</p> -->
+        <p class="priceBox"><span class="price">40€</span>/mois</p>
       </div>
     </div>
     <div class="offer">
       <div class="offerHeader">
         <img src="../../assets/imgs/offer3.png" alt="">
       </div>
-      <div class="offerContent" padding>
-        <h3>Formule xxx</h3>
+      <div class="offerContent">
+        <h3>Mon potager familial</h3>
+        <div class="line">
+          <p class="iconBox">
+            <img class='offerIcon' src="../../assets/imgs/5users.png" alt="">
+            4-5 personnes
+          </p>
+          <p class="iconBox">
+            <img class='offerIcon' src="../../assets/imgs/arrow.png" alt="">
+            100m2
+          </p>
+        </div>
+
+        <p class="priceBox"><span class="price">130€</span>/mois</p>
+        <!-- <p class="sale">-15%</p> -->
       </div>
     </div>
   </div>
 
   <div class="buttonBox">
-    <button ion-button (click)="selectOffer()">Sélectionner cet abonnement</button>
+    <button ion-button (click)="selectOffer()">Je m'abonne</button>
   </div>
 </ion-content>
