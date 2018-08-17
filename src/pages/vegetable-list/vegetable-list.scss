@@ -3,5 +3,8 @@ page-vegetable-list {
     text-transform: uppercase;
     color: color($colors, text);
   }
+  .item {
+    color: color($colors, text);
+  }
 
 }

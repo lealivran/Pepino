@@ -1,0 +1,16 @@
+page-thankyou {
+  .toolbar-title-ios {
+    text-transform: uppercase;
+    color: color($colors, text);
+  }
+  .content {
+    text-align: center;
+    color: color($colors, text);
+
+    .welcome {
+      color: color($colors, primary);
+      font-size: 2em;
+    }
+  }
+
+}

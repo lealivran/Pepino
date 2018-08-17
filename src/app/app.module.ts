@@ -14,6 +14,8 @@ import { OffersPage } from '../pages/offers/offers';
 import { PaymentPage } from '../pages/payment/payment';
 import { GardenerPage } from '../pages/gardener/gardener';
 import { VegetableListPage } from '../pages/vegetable-list/vegetable-list';
+import { ThankyouPage } from '../pages/thankyou/thankyou';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -35,7 +37,8 @@ import { InAppPurchase } from '@ionic-native/in-app-purchase';
     PaymentPage,
     OffersPage,
     GardenerPage,
-    VegetableListPage
+    VegetableListPage,
+    ThankyouPage
   ],
   imports: [
     BrowserModule,
@@ -56,7 +59,8 @@ import { InAppPurchase } from '@ionic-native/in-app-purchase';
     PaymentPage,
     OffersPage,
     GardenerPage,
-    VegetableListPage
+    VegetableListPage,
+    ThankyouPage
   ],
   providers: [
     StatusBar,

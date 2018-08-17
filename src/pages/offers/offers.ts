@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { GardenerPage } from '../gardener/gardener';
+import { ThankyouPage } from '../thankyou/thankyou';
 import { InAppPurchase } from '@ionic-native/in-app-purchase';
 
 /**
@@ -35,7 +35,7 @@ export class OffersPage {
   }
 
   selectOffer() {
-    this.navCtrl.setRoot(GardenerPage);
+    this.navCtrl.push(ThankyouPage);
   }
 
 }
