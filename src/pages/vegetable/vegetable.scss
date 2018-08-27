@@ -70,4 +70,39 @@ page-vegetable {
       }
     }
   }
+  .infoContent {
+    padding-top: 30px;
+    h3 {
+      color: color($colors, primary);
+      font-weight: normal;
+      font-size: 1.2em;
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+    }
+    .col {
+      text-align: center;
+    }
+    .title {
+      font-weight: bold;
+      color: #8c8c8c;
+    }
+  }
+  .dateContent {
+    padding-top: 30px;
+    h3 {
+      font-weight: normal;
+      font-size: 1.2em;
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+    }
+    .dateBox {
+      display: flex;
+      align-items: center;
+      img {
+        width: 20px;
+        margin-right: 10px;
+        margin-left: 20px;
+      }
+    }
+  }
 }

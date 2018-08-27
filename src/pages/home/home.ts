@@ -3,6 +3,7 @@ import { NavController} from 'ionic-angular';
 import { WeatherServiceProvider } from '../../providers/weather-service/weather-service';
 import { VegetablePage } from '../vegetable/vegetable';
 import { VegetableListPage } from '../vegetable-list/vegetable-list';
+import { OffersPage } from '../offers/offers';
 
 
 
@@ -32,6 +33,9 @@ export class HomePage {
     { 'vegetable': 'plusSign', 'step': null},
     { 'vegetable': 'plusSign', 'step': null},
     { 'vegetable': 'plusSign', 'step': null},
+  ];
+
+  extend = [
     { 'vegetable': 'extend', 'step': null}
   ];
 
@@ -52,6 +56,10 @@ export class HomePage {
 
   pushList() {
     this.navCtrl.push(VegetableListPage);
+  }
+
+  pushOffers() {
+    this.navCtrl.push(OffersPage);
   }
 
 }

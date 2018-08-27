@@ -36,6 +36,15 @@
           </ng-container>
         </div>
       </ion-col>
+
+      <ion-col class="gardenBox" col-3 *ngFor="let extend of extend" (click)="pushOffers()">
+        <img [ngClass]="{'icon': extend.step == null}" class='legume' src="../../assets/imgs/{{extend.vegetable}}.png" alt="">
+        <div class="dotbox" *ngIf="extend.step != null">
+          <ng-container *ngFor="let i of numbers; let index = index">
+            <span class="dot" [ngClass]="{'full': index < extend.step}"></span>
+          </ng-container>
+        </div>
+      </ion-col>
     </ion-row>
   </ion-grid>
 

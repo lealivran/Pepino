@@ -33,12 +33,131 @@
   </ion-segment>
 
   <div class="segmentContent" [ngSwitch]="value">
-    <div class="" *ngSwitchCase="'infos'">
-      infos
+    <div class="infoContent" *ngSwitchCase="'infos'">
+      <h3>COMPOSANTS</h3>
+      <ion-grid>
+        <ion-row>
+          <ion-col class="title">
+            Énergie
+          </ion-col>
+          <ion-col class="title">
+            Eau
+          </ion-col>
+          <ion-col class="title">
+            Fibres
+          </ion-col>
+          <ion-col class="title">
+            Glucides
+          </ion-col>
+          <ion-col class="title">
+            Protides
+          </ion-col>
+          <ion-col class="title">
+            Lipides
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            33 Kcal
+          </ion-col>
+          <ion-col>
+            89 g
+          </ion-col>
+          <ion-col>
+            3 g
+          </ion-col>
+          <ion-col>
+            6,7 g
+          </ion-col>
+          <ion-col>
+            0,8 g
+          </ion-col>
+          <ion-col>
+            0,30 g
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <h3>MINÉRAUX</h3>
+      <ion-grid>
+        <ion-row>
+          <ion-col class="title">
+            Calcium
+          </ion-col>
+          <ion-col class="title">
+            Fer
+          </ion-col>
+          <ion-col class="title">
+            Magnésium
+          </ion-col>
+          <ion-col class="title">
+            Sodium
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            30 mg
+          </ion-col>
+          <ion-col>
+            0,3 mg
+          </ion-col>
+          <ion-col>
+            14 mg
+          </ion-col>
+          <ion-col>
+            40 mg
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <h3>VITAMINES</h3>
+      <ion-grid>
+        <ion-row>
+          <ion-col class="title">
+            Vitamine A
+          </ion-col>
+          <ion-col class="title">
+            Vitamine C
+          </ion-col>
+          <ion-col class="title">
+            Vitamine E
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            7 mg
+          </ion-col>
+          <ion-col>
+            10 mg
+          </ion-col>
+          <ion-col>
+            0,5 mg
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </div>
 
-    <div class="" *ngSwitchCase="'dates'">
-      dates
+    <div class="dateContent" *ngSwitchCase="'dates'">
+      <h3>Préparation du sol</h3>
+      <p class="dateBox">
+        <img src="../../assets/imgs/calendar.png" alt="">
+        Janvier - Mars
+      </p>
+      <h3>Semis</h3>
+      <p class="dateBox">
+        <img src="../../assets/imgs/calendar.png" alt="">
+        Avril - Juin
+      </p>
+      <h3>Récolte</h3>
+      <p class="dateBox">
+        <img src="../../assets/imgs/calendar.png" alt="">
+        Septembre - Mars
+      </p>
+      <h3>Livraison</h3>
+      <p class="dateBox">
+        <img src="../../assets/imgs/calendar.png" alt="">
+        Septembre - Juillet
+      </p>
     </div>
 
     <div class="vegetableContent" *ngSwitchCase="'content'">
